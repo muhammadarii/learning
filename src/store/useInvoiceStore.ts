@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { InvoiceStore } from "@/types";
+import { InvoiceStore } from "@/types/invoice";
 import axios from "axios";
 
 export const useInvoiceStore = create<InvoiceStore>((set) => ({
