@@ -1,4 +1,5 @@
 import { getProductByUser } from "@/lib/data";
+import { formatDate } from "@/lib/utils";
 
 const ProductTable = async () => {
   const products = await getProductByUser();
@@ -19,7 +20,9 @@ const ProductTable = async () => {
           <tr key={product.id}>
             <td className="py-3 px-6">{product.name}</td>
             <td className="py-3 px-6">{product.price}</td>
-            <td className="py-3 px-6">{product.createdAt.toString()}</td>
+            <td className="py-3 px-6">
+              {formatDate(product.createdAt.toString())}
+            </td>
             <td className="py-3 px-6">{product.user.name}</td>
           </tr>
         ))}
