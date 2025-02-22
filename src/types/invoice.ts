@@ -10,5 +10,4 @@ export interface InvoiceStore {
   loading: boolean;
   error: string | null;
   fetchInvoices: () => Promise<void>;
-  // addInvoice: (invoice: Invoice) => Promise<void>;
 }
