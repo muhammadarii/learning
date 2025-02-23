@@ -11,7 +11,7 @@ const Navbar = async () => {
         <Link href="/">
           <Image
             src="/Travenor.png"
-            alt="logo"
+            alt="Image"
             width={128}
             height={36}
             priority
